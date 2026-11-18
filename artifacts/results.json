@@ -1,9 +1,50 @@
 {
-  "n_hours": 2160.0,
-  "n_rolling_folds": 5.0,
-  "merit_order_ate_eur_per_gw": -2.191,
-  "merit_order_se": 0.015,
-  "wmape": 0.0767,
-  "picp_90": 0.9345,
-  "pinball_50": 3.3947
+  "summary": {
+    "n_hours": 8784.0,
+    "negative_price_hours": 457.0,
+    "n_rolling_folds": 6.0,
+    "merit_order_ate_eur_per_gw": -3.1763,
+    "merit_order_se": 0.0283,
+    "mean_wmape": 0.1737,
+    "mean_picp_90": 0.9088,
+    "mean_pinball_50": 7.5233
+  },
+  "folds": [
+    {
+      "fold": 1.0,
+      "wmape": 0.2314,
+      "picp_90": 0.9014,
+      "pinball_50": 8.1005
+    },
+    {
+      "fold": 2.0,
+      "wmape": 0.1966,
+      "picp_90": 0.8653,
+      "pinball_50": 8.1951
+    },
+    {
+      "fold": 3.0,
+      "wmape": 0.1921,
+      "picp_90": 0.8986,
+      "pinball_50": 7.8457
+    },
+    {
+      "fold": 4.0,
+      "wmape": 0.1722,
+      "picp_90": 0.9431,
+      "pinball_50": 6.8784
+    },
+    {
+      "fold": 5.0,
+      "wmape": 0.123,
+      "picp_90": 0.9278,
+      "pinball_50": 7.0856
+    },
+    {
+      "fold": 6.0,
+      "wmape": 0.127,
+      "picp_90": 0.9167,
+      "pinball_50": 7.0343
+    }
+  ]
 }
