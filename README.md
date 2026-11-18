@@ -26,6 +26,17 @@ flowchart LR
     FORE --> EVAL["src/evaluation/rolling_backtest.py"]
 ```
 
+## Résultats & Dataset (`data/eu_grid_hourly.csv`)
+
+| Indicateur | Valeur observée | Description |
+|---|---|---|
+| Observations | `2 160` heures (90 jours) | Série horaire européenne persistée dans `data/eu_grid_hourly.csv` |
+| Backtest glissant | `5` folds (embargo 24h) | Validation temporelle sans fuite |
+| Effet *Merit-Order* (DML) | `-2.1910` EUR/MWh/GW (`SE = 0.0150`) | Impact causal marginal de +1 GW renouvelable |
+| wMAPE | `0.0767` (7.67 %) | Erreur relative pondérée hors-échantillon |
+| PICP (90 %) | `0.9345` (93.45 %) | Couverture empirique des intervalles conformes |
+| Pinball Loss (q50) | `3.3947` | Perte quantile médiane (`artifacts/results.json`) |
+
 ## Démarrage Rapide
 
 ```bash

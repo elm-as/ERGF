@@ -1,0 +1,9 @@
+{
+  "n_hours": 2160.0,
+  "n_rolling_folds": 5.0,
+  "merit_order_ate_eur_per_gw": -2.191,
+  "merit_order_se": 0.015,
+  "wmape": 0.0767,
+  "picp_90": 0.9345,
+  "pinball_50": 3.3947
+}
